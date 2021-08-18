@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.min.js" integrity="sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw==" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="f.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css" integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q==" crossorigin="anonymous" />
+  <style>
+    .main1 {
+  max-width: 1000px;
+  margin: auto;
+}
+	.circle-container {
+        position: relative;
+        width: 24em;
+        height: 24em;
+        padding: 2.8em;
+        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
+        border: 1px;
+        border-radius: 50%;
+        margin: 6.75em auto 0;
+
+    }
+    .circle-container a {
+        display: block;
+        position: absolute;
+        top: 50%; left: 50%;
+        width: 4em; height: 4em;
+        margin: -2em;
+    }
+    .circle-container img { display: block; width: 100%; }
+    .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
+    .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
+    .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
+	  .deg275 { transform: rotate(275deg) translate(12em) rotate(-275deg); }
+    .deg180 { transform: translate(-12em); }
+    .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
+    .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
+    .deg425 { transform: rotate(425deg) translate(12em) rotate(-425deg); }
+    .deg325 { transform: rotate(325deg) translate(12em) rotate(-325deg); }
+	  #block, #block1{
+				animation:floating;
+				animation-iteration-count:infinite;
+				animation-duration:5s;
+				animation-timing-function:ease-in-out;
+				
+			}
+      .cen{
+        text-align:center;
+        margin-top:90px;
+      }
+      .cen1{
+        text-align:center;
+        margin-top:20px;
+       
+      }
+      .cen11{
+        text-align:center;
+        margin-top:20px;
+        font-family: 'Roboto Condensed', sans-serif;
+      }
+      .cen2{
+        text-align:center;
+        margin-top:0px;
+      }
+			#block{
+			margin-left: 30px;
+				margin-top:2px;	
+			}
+			#block1{
+				margin-left: 50px;
+				margin-top:100px;
+				margin-bottom: 66px;
+			}
+			@keyframes floating{
+				from{transform:translate(0, 0px);}
+				65% {transform:translate(0, 15px);}
+				to{transform:translate(0, 0px);}
+			}
+  
+/* Create four equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 33%;
+}
+
+/* Clear floats after rows */ 
+
+
+/* Content */
+.content1 {
+  background-color: black;
+  padding: 10px;
+  
+
+}
+.yo{
+ z-index:99999;
+  position: absolute;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column1 {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column1 {
+    width: 100%;
+  }
+}
+   section .wave{
+     position:absolute;
+     bottom:0;
+     
+     width: 100%;
+     height:100px;
+     background: url(uuu.png);
+   background-size: 1000px 100px;
+   
+    
+   }
+   
+    .container1 {
+  padding: 295px;
+}
+   
+   section .wave.water{
+    
+     z-index: 1000;
+     opacity: 1;
+     
+     bottom:0;
+   }   
+   
+   section .wave.water:nth-child(2){
+     animation: animate2 15s linear infinite;
+     z-index: 99;
+     opacity: 0.5;
+   
+     bottom:10px;
+   }  
+   
+   section .wave1.water1:nth-child(3){
+      animation: animate 30s cubic-bezier(.55, .5,.45,.5) infinite;
+     z-index: 998;
+     opacity: 0.4;
+ position:absolute;
+     bottom:0;
+     transform: rotate(180deg);
+     width: 100%;
+     height:100px;
+     background: url(rrpng.png);
+   background-size: 1000px 100px ;
+     top:60px;
+   }  
+   
+   
+   
+  
+@keyframes animate
+   {
+    
+   0% {
+     background-position-x:0;
+     }
+    
+ 100% {
+   background-position-x:1000px;
+   }
+    
+   }
+   @keyframes animate2
+   {
+    
+   0% {
+     background-position-x:0;
+     }
+    
+ 100% {
+   background-position-x:-1000px;
+   }
+    
+   }
+	</style>
+  
+	</head>
+	<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height="36">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+	</nav>
+	
+	<body>
+    
+
+  
+		<h1 class="cen"><b>Design.Develop.Create</b></h1>
+		<h2 class="cen1">I design and code experiences that users ❤</h2>
+	<div class='circle-container'>
+		<a href='#' class='center'><img id="block" style= "width:50px;" src="1280px-React-icon.svg.png"></a>
+		<a href='#' class='deg0'><img id="block" style= "width:50px;"src="2560px-Node.js_logo.svg.png"></a>
+		<a href='#' class='deg315'><img id="block" style= "width:50px;"src="image9.png"></a>
+		 <a href='#' class='deg45'><img id="block" style= "width:50px;"src="kisspng-microsoft-azure-sql-database-microsoft-sql-server-sql-developer-icon-5b4426eca26366.6906197815311930686652-removebg-preview.png"></a>
+		<a href='#' class='deg135'><img id="block" style= "width:50px;"src="MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"></a>
+		<a href='#' class='deg180'><img id="block" style= "width:50px;"src="node-js-javascript-react-png-favpng-ftgaqpknWg8SBBpxQAHqFq4wq-removebg-preview.png"></a>
+		 <a href='#' class='deg225'><img id="block" style= "width:50px;"src="npm.png"></a>
+     <a href='#' class='deg425'><img id="block" style= "width:40px;"src="732212.png"></a>
+		 <a href='#' class='deg275'><img id="block" style= "width:50px;"src="png-clipart-java-development-kit-software-development-kit-computer-programming-computer-icons-programming-language-icon-text-logo-thumbnail-removebg-preview__1_-removebg-preview.png"></a>
+      <a href='#' class='deg325'><img id="block" style= "width:40px;"src="kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877-removebg-preview.png"></a>
+		<center><img class="yo"  src="svgA7338061288430615.png"></center>
+		 </div>
+
+     <section>
+	<div class="wave water"></div>
+  <div class="wave water"></div>
+  <div class="wave1 water1"></div>
+  
+	</section>
+	<div style="color:#ddd;background-color:#f2147f;text-align:center;padding:60px 100px;text-align: justify;">
+    
+    <div class="main1">
+      <h1 class="cen2">Howdy, I'm Robin. Nice to meet you.</h1>
+    <h3 class="cen11">I've been making cool things for the web for over 2 years. From the early days of the web - html, css, and javascript games to NPM, React, Node, and today's modern dev tools - I haven't met a browser that could keep me down. I design with users in mind, take great care to always polish my pixels and skills, because the sites we visit and tools we use should delight us always.</h3>
+    <pre>
+
+    </pre>
+<div class="row11">
+  <div class="column1">
+    <div class="content1">
+    <center>  <image style="width:100px; height:100px;" src="ce-removebg-preview.png" alt="" ></center>
+       <pre></pre>
+      <center><h3 style="color:#FF00FF;">Designer</h3></center>
+      <p>I love UI/UX - I design things users touch and feel and get giddy about when they interact. It should be obvious and feel good.</p>
+      <center><h6 style="color:#FF00FF;">What I like to design:</h6></center><p>Websites, Apps, Landing Pages, Product Pages, Motion Graphics, Infographcs, Presentations (they can be cool too)</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>Pen &amp; Paper</li><li>Adobe XD</li><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Chrome Dev Tools</li><li>Codepen</li><li>After Effects</li></ul>
+        
+    </div>
+  </div>
+  <div class="column1">
+    <div class="content1">
+  <center>  <img style="width:100px; height:100px;"src="re-removebg-preview.png" alt="" ></center>
+   <pre></pre>
+      <center>   <h3 style="color:#FF00FF">Developer</h3></center>
+     <p>I build intuitive user experiences that people want to return to. I love the process of taking an idea and imagining the code.</p> <center><h6 style="color:#FF00FF;">What I like to develop:</h6></center><p>SPA&#x27;s, Web Apps, Websites, Tools, Products, Complex Interactions, Stories/Animations, Api&#x27;s &amp; Relational Schemas</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>VS Code</li><li>React (Sometimes Next)</li><li>SASS (or LESS)</li><li>Node JS (MERN)</li><li>SVG (Lotti)</li><li>Angular</li><li>JQuery (less these days)</li><li>CLIs</li></ul>
+    </div>
+  </div>
+  <div class="column1">
+    <div class="content1">
+  <center>  <img style="width:100px; height:100px;"src="ure-removebg-preview.png" alt="" ></center>
+  <pre></pre>
+       <center>  <h3 style="color:#FF00FF">Thoughtful Leader</h3></center>
+      <p>I love ideas, I love sharing them, and I love the spark I see when I help someone learn something new or invent.</p><center><h6 style="color:#FF00FF;">Some of my experience includes:</h6></center><p>Project Management, Team Lead, Functional Manager, Technical SME, Lead Developer, Technical Scoping &amp; Sales</p><center><h6 style="color:#FF00FF;">Some Stuff I&#x27;ve Done:</h6></center><ul><li>PMI ACP Certification</li><li>MBA Student (1/2 done)</li><li>ATD-CIC Tech Summit Presenter</li><li>ATD-ICE Presentation on Tech Adoption</li><li>ATD-ICE Presentation on 360 Video &amp; Tools</li></ul>
+    </div>
+  </div>
+ 
+    
+    
+<!-- END GRID -->
+</div>
+
+
+<!-- END MAIN -->
+</div>
+        </div>
+    </div>
+  </div>
+  <div class="container1">
+       
+        </div>
+    
+    <div style="color: black;background-color:white;text-align:centre;padding:50px 80px;">
+    
+     <center>   <h1>     Project Work</h1>
+<h4 class="cen11">I've worked on so many things over the years... Here is some cool stuff I did.<hr></h4></center>
+        </div>
+ 
+        <div class="grid">
+          <figure class="effect-sadie">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>
+            <figcaption>
+              <h2>Holy <span>Sadie</span></h2>
+              <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-sadie">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/14.jpg" alt="img14"/>
+            <figcaption>
+              <h2>Holy <span>Sadie</span></h2>
+              <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+           <figure class="effect-sadie">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>
+            <figcaption>
+              <h2>Holy <span>Sadie</span></h2>
+              <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+          <figure class="effect-sadie">
+            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/14.jpg" alt="img14"/>
+            <figcaption>
+              <h2>Holy <span>Sadie</span></h2>
+              <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
+              <a href="#">View more</a>
+            </figcaption>     
+          </figure>
+        </div>
+	</body>
+</html>
