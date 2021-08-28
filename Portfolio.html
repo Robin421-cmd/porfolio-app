@@ -3,202 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/js/bootstrap.min.js" integrity="sha512-mp3VeMpuFKbgxm/XMUU4QQUcJX4AZfV5esgX72JQr7H7zWusV6lLP1S78wZnX2z9dwvywil1VHkHZAqfGOW7Nw==" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="f.css"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta3/css/bootstrap.min.css" integrity="sha512-N415hCJJdJx+1UBfULt+i+ihvOn42V/kOjOpp1UTh4CZ70Hx5bDlKryWaqEKfY/8EYOu/C2MuyaluJryK1Lb5Q==" crossorigin="anonymous" />
-  <style>
-    .main1 {
-  max-width: 1000px;
-  margin: auto;
-}
-	.circle-container {
-        position: relative;
-        width: 24em;
-        height: 24em;
-        padding: 2.8em;
-        /*2.8em = 2em*1.4 (2em = half the width of a link with img, 1.4 = sqrt(2))*/
-        border: 1px;
-        border-radius: 50%;
-        margin: 6.75em auto 0;
-
-    }
-    .circle-container a {
-        display: block;
-        position: absolute;
-        top: 50%; left: 50%;
-        width: 4em; height: 4em;
-        margin: -2em;
-    }
-    .circle-container img { display: block; width: 100%; }
-    .deg0 { transform: translate(12em); } /* 12em = half the width of the wrapper */
-    .deg45 { transform: rotate(45deg) translate(12em) rotate(-45deg); }
-    .deg135 { transform: rotate(135deg) translate(12em) rotate(-135deg); }
-	  .deg275 { transform: rotate(275deg) translate(12em) rotate(-275deg); }
-    .deg180 { transform: translate(-12em); }
-    .deg225 { transform: rotate(225deg) translate(12em) rotate(-225deg); }
-    .deg315 { transform: rotate(315deg) translate(12em) rotate(-315deg); }
-    .deg425 { transform: rotate(425deg) translate(12em) rotate(-425deg); }
-    .deg325 { transform: rotate(325deg) translate(12em) rotate(-325deg); }
-	  #block, #block1{
-				animation:floating;
-				animation-iteration-count:infinite;
-				animation-duration:5s;
-				animation-timing-function:ease-in-out;
-				
-			}
-      .cen{
-        text-align:center;
-        margin-top:90px;
-      }
-      .cen1{
-        text-align:center;
-        margin-top:20px;
-       
-      }
-      .cen11{
-        text-align:center;
-        margin-top:20px;
-        font-family: 'Roboto Condensed', sans-serif;
-      }
-      .cen2{
-        text-align:center;
-        margin-top:0px;
-      }
-			#block{
-			margin-left: 30px;
-				margin-top:2px;	
-			}
-			#block1{
-				margin-left: 50px;
-				margin-top:100px;
-				margin-bottom: 66px;
-			}
-			@keyframes floating{
-				from{transform:translate(0, 0px);}
-				65% {transform:translate(0, 15px);}
-				to{transform:translate(0, 0px);}
-			}
-  
-/* Create four equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 33%;
-}
-
-/* Clear floats after rows */ 
-
-
-/* Content */
-.content1 {
-  background-color: black;
-  padding: 10px;
-  
-
-}
-.yo{
- z-index:99999;
-  position: absolute;
-}
-
-/* Responsive layout - makes a two column-layout instead of four columns */
-@media screen and (max-width: 900px) {
-  .column1 {
-    width: 50%;
-  }
-}
-
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .column1 {
-    width: 100%;
-  }
-}
-   section .wave{
-     position:absolute;
-     bottom:0;
-     
-     width: 100%;
-     height:100px;
-     background: url(uuu.png);
-   background-size: 1000px 100px;
-   
-    
-   }
-   
-    .container1 {
-  padding: 295px;
-}
-   
-   section .wave.water{
-    
-     z-index: 1000;
-     opacity: 1;
-     
-     bottom:0;
-   }   
-   
-   section .wave.water:nth-child(2){
-     animation: animate2 15s linear infinite;
-     z-index: 99;
-     opacity: 0.5;
-   
-     bottom:10px;
-   }  
-   
-   section .wave1.water1:nth-child(3){
-      animation: animate 30s cubic-bezier(.55, .5,.45,.5) infinite;
-     z-index: 998;
-     opacity: 0.4;
- position:absolute;
-     bottom:0;
-     transform: rotate(180deg);
-     width: 100%;
-     height:100px;
-     background: url(rrpng.png);
-   background-size: 1000px 100px ;
-     top:60px;
-   }  
-   
-   
-   
-  
-@keyframes animate
-   {
-    
-   0% {
-     background-position-x:0;
-     }
-    
- 100% {
-   background-position-x:1000px;
-   }
-    
-   }
-   @keyframes animate2
-   {
-    
-   0% {
-     background-position-x:0;
-     }
-    
- 100% {
-   background-position-x:-1000px;
-   }
-    
-   }
-	</style>
   
 	</head>
+  <body>
 	<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light  static-top">
   <div class="container">
     <a class="navbar-brand" href="#">
-      <img src="https://placeholder.pics/svg/150x50/888888/EEE/Logo" alt="..." height="36">
+      <img src="panda-icon-13.jpg" alt="..." height="36">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -206,47 +27,38 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ms-auto">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
+          <a class="nav-link" href="#">Portfolio</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown
-          </a>
-          <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
         </li>
+       <li class="nav-item"><a href="mailto:robindeepka@gmail.com" class="btn btn-primary"><i class="fas fa-envelope d-inline-block mr-3 d-md-none"></i>Say Hello</a></li>
       </ul>
     </div>
   </div>
 	</nav>
 	
-	<body>
+	
     
 
   
 		<h1 class="cen"><b>Design.Develop.Create</b></h1>
 		<h2 class="cen1">I design and code experiences that users ❤</h2>
 	<div class='circle-container'>
-		<a href='#' class='center'><img id="block" style= "width:50px;" src="1280px-React-icon.svg.png"></a>
-		<a href='#' class='deg0'><img id="block" style= "width:50px;"src="2560px-Node.js_logo.svg.png"></a>
-		<a href='#' class='deg315'><img id="block" style= "width:50px;"src="image9.png"></a>
-		 <a href='#' class='deg45'><img id="block" style= "width:50px;"src="kisspng-microsoft-azure-sql-database-microsoft-sql-server-sql-developer-icon-5b4426eca26366.6906197815311930686652-removebg-preview.png"></a>
-		<a href='#' class='deg135'><img id="block" style= "width:50px;"src="MongoDB_Logo_FullColorBlack_RGB-4td3yuxzjs.png"></a>
-		<a href='#' class='deg180'><img id="block" style= "width:50px;"src="node-js-javascript-react-png-favpng-ftgaqpknWg8SBBpxQAHqFq4wq-removebg-preview.png"></a>
-		 <a href='#' class='deg225'><img id="block" style= "width:50px;"src="npm.png"></a>
+		<a href='#' class='deg0'><img id="block1" style= "width:50px;" src="1280px-React-icon.svg.png"></a>
+	
+		<a href='#' class='deg305'><img id="block" style= "width:50px;"src="image9.png"></a>
+		 
+	
+		<a href='#' class='deg180'><img id="block2" style= "width:50px;"src="node-js-javascript-react-png-favpng-ftgaqpknWg8SBBpxQAHqFq4wq-removebg-preview.png"></a>
+		 <a href='#' class='deg275'><img id="block" style= "width:50px;"src="npm.png"></a>
      <a href='#' class='deg425'><img id="block" style= "width:40px;"src="732212.png"></a>
-		 <a href='#' class='deg275'><img id="block" style= "width:50px;"src="png-clipart-java-development-kit-software-development-kit-computer-programming-computer-icons-programming-language-icon-text-logo-thumbnail-removebg-preview__1_-removebg-preview.png"></a>
-      <a href='#' class='deg325'><img id="block" style= "width:40px;"src="kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877-removebg-preview.png"></a>
-		<center><img class="yo"  src="svgA7338061288430615.png"></center>
+		 <a href='#' class='deg245'><img id="block" style= "width:50px;"src="png-clipart-java-development-kit-software-development-kit-computer-programming-computer-icons-programming-language-icon-text-logo-thumbnail-removebg-preview__1_-removebg-preview.png"></a>
+      <a href='#' class='deg335'><img id="block2" style= "width:40px;"src="kisspng-github-computer-icons-icon-design-desktop-wallpape-5b3d36142dd125.8636932415307381961877-removebg-preview.png"></a>
+		<img class="yo"  src="svgA7338061288430615.png">
 		 </div>
 
      <section>
@@ -263,6 +75,7 @@
     <pre>
 
     </pre>
+
 <div class="row11">
   <div class="column1">
     <div class="content1">
@@ -270,7 +83,7 @@
        <pre></pre>
       <center><h3 style="color:#FF00FF;">Designer</h3></center>
       <p>I love UI/UX - I design things users touch and feel and get giddy about when they interact. It should be obvious and feel good.</p>
-      <center><h6 style="color:#FF00FF;">What I like to design:</h6></center><p>Websites, Apps, Landing Pages, Product Pages, Motion Graphics, Infographcs, Presentations (they can be cool too)</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>Pen &amp; Paper</li><li>Adobe XD</li><li>Figma</li><li>Photoshop</li><li>Illustrator</li><li>Chrome Dev Tools</li><li>Codepen</li><li>After Effects</li></ul>
+      <center><h6 style="color:#FF00FF;">What I like to design:</h6></center><p>Websites, Apps, Logos, UX, UI, Mobile, Presentations (they can be cool too)</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>Pen &amp; Paper</li><li>Blasmiq</li><li>Paint 3d</li><li>WIX</li><li>Figma</li><li>Zeplin</li><li>Chrome Dev Tools</li><li>Codepen</li><li>After Effects</li></ul>
         
     </div>
   </div>
@@ -279,15 +92,15 @@
   <center>  <img style="width:100px; height:100px;"src="re-removebg-preview.png" alt="" ></center>
    <pre></pre>
       <center>   <h3 style="color:#FF00FF">Developer</h3></center>
-     <p>I build intuitive user experiences that people want to return to. I love the process of taking an idea and imagining the code.</p> <center><h6 style="color:#FF00FF;">What I like to develop:</h6></center><p>SPA&#x27;s, Web Apps, Websites, Tools, Products, Complex Interactions, Stories/Animations, Api&#x27;s &amp; Relational Schemas</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>VS Code</li><li>React (Sometimes Next)</li><li>SASS (or LESS)</li><li>Node JS (MERN)</li><li>SVG (Lotti)</li><li>Angular</li><li>JQuery (less these days)</li><li>CLIs</li></ul>
+     <p>I build intuitive user experiences that people want to return to. I love the process of taking an idea and imagining the code and c.</p> <center><h6 style="color:#FF00FF;">Languages I speak:</h6></center><p>HTML, Java, CSS, Javascript, Node, React, Python, SQL, android, Api&#x27;s &amp; Relational Schemas</p><center><h6 style="color:#FF00FF;">Tools I Use:</h6></center><ul><li>VS Code</li><li>PyCharm</li><li>Sublime Text</li><li>SVG (Lotti)</li><li>Bootstrap</li><li>Github</li><li>Android Studio</li><li>MySql developer</li></ul>
     </div>
   </div>
   <div class="column1">
     <div class="content1">
   <center>  <img style="width:100px; height:100px;"src="ure-removebg-preview.png" alt="" ></center>
   <pre></pre>
-       <center>  <h3 style="color:#FF00FF">Thoughtful Leader</h3></center>
-      <p>I love ideas, I love sharing them, and I love the spark I see when I help someone learn something new or invent.</p><center><h6 style="color:#FF00FF;">Some of my experience includes:</h6></center><p>Project Management, Team Lead, Functional Manager, Technical SME, Lead Developer, Technical Scoping &amp; Sales</p><center><h6 style="color:#FF00FF;">Some Stuff I&#x27;ve Done:</h6></center><ul><li>PMI ACP Certification</li><li>MBA Student (1/2 done)</li><li>ATD-CIC Tech Summit Presenter</li><li>ATD-ICE Presentation on Tech Adoption</li><li>ATD-ICE Presentation on 360 Video &amp; Tools</li></ul>
+       <center>  <h3 style="color:#FF00FF">Thought Leader</h3></center>
+      <p>I love ideas and I love sharing them and I love the spark that I see when I help someone learn something new or invent any new thing.</p><center><h6 style="color:#FF00FF;">Some of my experience includes:</h6></center><p>Project Management, Team Lead, Candaian Government and Politics, Fundamentals of Entrepreneurship, Human Interactions, Technical Scoping &amp; Sales</p><center><h6 style="color:#FF00FF;">Some Stuff I&#x27;ve Done:</h6></center><ul><li>Project Management Simplified Certification</li><li>Leading Without Formal Authority Certification</li><li>Computer Prgramming Course(2 years)</li><li>Programming Foundations: Fundamentals Certification</li></ul>
     </div>
   </div>
  
@@ -302,49 +115,147 @@
         </div>
     </div>
   </div>
+  <div style="color:#ddd;background-color:#f2147f;text-align:center;padding:60px 100px;text-align: justify;">
+  </div>
   <div class="container1">
        
         </div>
     
     <div style="color: black;background-color:white;text-align:centre;padding:50px 80px;">
     
-     <center>   <h1>     Project Work</h1>
+     <center>   <h1>     Project Work</h1></center>
 <h4 class="cen11">I've worked on so many things over the years... Here is some cool stuff I did.<hr></h4></center>
         </div>
  
         <div class="grid">
+
           <figure class="effect-sadie">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>
+            <img src="dhdh.jpg" alt="img02"/>
             <figcaption>
-              <h2>Holy <span>Sadie</span></h2>
+              <h2>Weath <span>erify</span></h2>
               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
-              <a href="#">View more</a>
+              <a href="https://jquery-weather-app1.herokuapp.com/">View more</a>
             </figcaption>     
           </figure>
           <figure class="effect-sadie">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/14.jpg" alt="img14"/>
+            <img src="college-application-season.jpeg" alt="img14"/>
             <figcaption>
-              <h2>Holy <span>Sadie</span></h2>
+              <h2>SMRPM <span>College</span></h2>
               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
               <a href="#">View more</a>
             </figcaption>     
           </figure>
            <figure class="effect-sadie">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/2.jpg" alt="img02"/>
+            <img src="mobile_apps.jpg" alt="img02"/>
             <figcaption>
-              <h2>Holy <span>Sadie</span></h2>
+              <h2>Para <span>dice</span></h2>
               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
               <a href="#">View more</a>
             </figcaption>     
           </figure>
           <figure class="effect-sadie">
-            <img src="https://tympanus.net/Development/HoverEffectIdeas/img/14.jpg" alt="img14"/>
+            <img src="5b07555a72a0ed84bb495eeb_CLOUD APP.png" alt="img14"/>
             <figcaption>
-              <h2>Holy <span>Sadie</span></h2>
+              <h2>Rad <span>Drive</span></h2>
               <p>Sadie never took her eyes off me. <br>She had a dark soul.</p>
               <a href="#">View more</a>
             </figcaption>     
           </figure>
         </div>
+      
+<div style="color:black;background-color:white;text-align:center;padding:90px 250px;text-align: justify;">
+       <center>  <a href="#/" class="pricing-button">See Full Portfolio</a></center>
+       <center><h4>Looking for something specific? Email me.</h4></center>
+</div>
+     <div style="background:#0dcaf0!important; black;text-align:center;padding:50px 80px;text-align: justify;">
+    <h1 style="text-align:center; font-family:sans-serif;"><article class="container-fluid bg-info text-center text-white pt-5 pb-3"><div class="container py-3"><p>Presentations and Reports</p><div class="col-12 offset-0 col-md-8 offset-md-2 mt-3 px-4"><h3>I&#x27;m a bit of a nerd. I enjoy sharing cool new ideas, techniques, and technologies just as much as I love to learn. The best thing is seeing someone get excited by a new idea. My friends tells me I should be a teacher.</h3></div></div></article></h1>
+      <div class="container">
+    <div class="row">
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="Capture.png">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">Java Project Report</h3>
+                        <span class="post">CRUD Application</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="Capture1.png">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">Presentation</h3>
+                        <span class="post">Canadian Politics</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <div class="col-md-4 col-sm-6">
+            <div class="box">
+                <img src="i.jpg">
+                <div class="box-content">
+                    <div class="content">
+                        <h3 class="title">Java Report</h3>
+                        <span class="post">Backend Program</span>
+                        <ul class="icon">
+                            <li><a href="#"><i class="fa fa-eye"></i></a></li>
+                            <li><a href="#"><i class="fa fa-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+<div style="color:black;background-color:white;text-align:center;padding:50px 50px;text-align: justify;">
+       <section id="HomePage-blog" class="container-fluid pt-5 mt-5 "><div class="container mb-5 mt-5 "><div class="row text-center"><div class="col-12 offset-0 col-md-8 offset-md-2 px-4"><h3>I&#x27;m Gathering My Thoughts <br/> <small>(Blog Coming Soon)</small></h3><p class="py-3">I’ve created/written a lot over the years, I’m pruning the tree, and will add old and new posts soon. Check back soon!</p><a class="btn btn-outline-primary mb-4" href="/blog">Read Blog</a></div></div></div></section>
+</div>
+<div style="z-index:1;" class="container">
+   <div class="main1"><div class="card text-black">
+  <div class="row text-center"><div class="col-12 col-lg-4 my-2"><h4>Start a project</h4></div><div class="col-12 col-lg-4 my-2"><p>Interested in working together? <br/> We should chat!</p></div><div class="col-12 col-lg-4 my-2"><a href="mailto:robindeepka@gmail.com" class="btn btn-outline-primary text-pink">Let&#x27;s kick the tires!</a></div>
+</div>
+</div>
+</div>
+</div>
+
+<div style="color:#ddd;background-color:#f2147f;margin: -52px auto 6px;text-align:center;padding:60px 100px;text-align: justify;">
+  
+  <center>  <img style="width:50px;height:50px;margin-top:30px;"src="panda-icon-13.jpg"></center>
+   <div class="row py-3"><div class="col-12 offset-0 col-md-6 offset-md-3 text-center px-5"><h6 class="subtitle">You can make anything happen on the web with some developers and a little bit of elbow grease.</h6></div></div>
+   <div id="Site_Footer-social" class="row py-3">
+    <a href="https://github.com/nickdoesstuff" target="_blank"><i class="fa fa-github"></i></a>
+    <a href="https://www.linkedin.com/in/nickdoesstuff/" target="_blank"><i class="fa fa-linkedin"></i></a>
+    <a href="https://twitter.com/nick_shelton" target="_blank"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.youtube.com/c/nashelto/videos" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="mailto:robindeepka@gmail.com"><i class="fa fa-envelope"></i></a></div>
+    <div class="row">
+      
+      <div class="col text-center py-3">
+      </div>
+    <div  class="container">
+   
+  <div class="row text-center">
+   <div class="row"><div class="BuiltUsing col-12 offset-0 rounded col-md-4 offset-md-4 bg-light pb-3 text-dark"><div id="Site_Footer-built-with-text"><div class="col text-center py-3">
+      </div>Built with <svg xmlns="http://www.w3.org/2000/svg" width="18.5094" height="17.1402" viewBox="0 0 30.849 28.567"><path id="Icon_metro-heart" data-name="Icon metro-heart" d="M25.321,3.856c-3.242,0-6.033,2.638-7.325,5.392C16.7,6.494,13.911,3.856,10.669,3.856a8.1,8.1,0,0,0-8.1,8.1c0,9.093,9.173,11.478,15.425,20.468C23.9,23.488,33.419,20.758,33.419,11.955A8.1,8.1,0,0,0,25.321,3.856Z" transform="translate(-2.571 -3.856)" fill="#dc3545"></path></svg><div class="col text-center py-3">
+        <p id="Site_Footer-craftedBy" class="py-3">Handcrafted by Robin in <!-- -->2021</p>
+      </div></div>
+  </div>
+
+</div>
+</div>
+</div></div>
 	</body>
 </html>
